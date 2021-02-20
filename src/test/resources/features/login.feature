@@ -1,7 +1,7 @@
 Feature: User should login
 Background:
   Given the user is at the login page
-
+@wip
   Scenario:Only authorized	users	should	be	able	to	login	to	the	application
     When the user enters login credentials
     Then Account Summary Page Displayed

@@ -37,8 +37,13 @@ public class Login {
         username.sendKeys(ConfigurationReader.get("username"));
         password.sendKeys(ConfigurationReader.get("password"));
         submitbutton.click();
-        advancedbutton.click();
-        proceedwebpage.click();
+        try{
+            advancedbutton.click();
+            proceedwebpage.click();
+        }catch (Exception e){
+
+        }
+
     }
     public void login(String username,String password)  {
         signin_button.click();
